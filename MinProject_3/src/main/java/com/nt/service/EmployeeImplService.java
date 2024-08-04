@@ -15,6 +15,27 @@ public class EmployeeImplService implements IEmployeeService
 	{
 		return repository.findAll();
 	}
+	@Override
+	public String registerEmployee(Employee emp) {
+		int Idvalue=repository.save(emp).getEmpno();
+		return "The Employee Id Value"+Idvalue;
+	}
+	@Override
+	public Employee getEmployee(int eno) {
+		Employee emp=repository.findById(eno).orElseThrow( ()->new IllegalArgumentException());
+		return emp;
+	}
+	@Override
+	public String EditEmployee(Employee emp) {
+		
+		return "Employee Updated With Id Value:"+repository.save(emp).getEmpno();
+	}
+	@Override
+	public String deleteEmployee(int eno) {
+		repository.deleteById(eno);
+	
+		return eno+":Employee deleted ";
+	}
 	
 
 }
