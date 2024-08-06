@@ -1,4 +1,4 @@
 -------------------------------------------------------------------------------
 Test set: com.nt.MinProject3ApplicationTests
 -------------------------------------------------------------------------------
-Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 10.08 s -- in com.nt.MinProject3ApplicationTests
+Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 6.201 s -- in com.nt.MinProject3ApplicationTests
