@@ -1,5 +1,10 @@
 package com.nt.service;
 
+
+
+
+
+
 import com.nt.entity.Employee;
 
 public interface IEmployeeService 
@@ -10,5 +15,6 @@ public interface IEmployeeService
 	public Employee getEmployee(int eno);
 	public String EditEmployee(Employee emp);
 	public String deleteEmployee(int no);
+	
 
 }
